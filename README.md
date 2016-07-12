@@ -22,5 +22,6 @@ All "()" is removed, all abbreviations are replaced with their full names, all "
 At the end of script run_analysis.R, subData is grouped by two variables - "subject" and "activity", and mean value of each variable is calculated for each combination of "subject" and "activity" (meaning the average of feature measurement when a certain volunteer is performing one kind of activities). The grouped data is assigned to variable groupData, and written in a text file with file path "./project/group_data.txt"
 
 The grouped data set can be read into R using following code:
+
 data <- read.table("./project/group_data.txt", header = TRUE) 
 View(data)
