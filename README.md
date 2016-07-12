@@ -23,5 +23,6 @@ At the end of script run_analysis.R, subData is grouped by two variables - "subj
 
 The grouped data set can be read into R using following code:
 
-data <- read.table("./project/group_data.txt", header = TRUE) 
+data <- read.table("./project/group_data.txt", header = TRUE)
+
 View(data)
