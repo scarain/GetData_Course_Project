@@ -1,5 +1,19 @@
-# GetData_Course_Project
-Getting and Cleaning Data - Course Project
+# Getting and Cleaning Data - Course Project
+
+## The repository includes the following files:
+1. "README.md"
+2. "run_analysis.R": An R script analyzes data and creates a new data set "group_data.txt" 
+3. "group_data.txt": A tidty data set with the average of each variable for each activity and each subject
+4. "CODEBOOK.md": Indicates all the variables and summaries calculated, along with units, and any other relevant information
+
+## Steps to reproduce this project
+1. Choose a propriate working directory.
+2. Run the R script run_analysis.R in R.
+3. The grouped data set is saved as "./project/group_data.txt". It can be read into R using following code:<br>
+            data <- read.table("./group_data.txt", header = TRUE)<br>
+            View(data)
+
+## Description of run_analysis.R
 
 This run_analysis.R file downloads data from website, then manipulates and cleans the data set to create an independent tidy data set with the average of the mean and standard deviation for each measurement for each activity and each subject.
 
@@ -20,9 +34,3 @@ The raw data of activity variable is given as class labels from 1 to 6. To use d
 All "()" is removed, all abbreviations are replaced with their full names, all "-" are replaced with "_", and all words are seperated with "_" in the column names to appropriately label the data set subData with descriptive variable names.
 
 At the end of script run_analysis.R, subData is grouped by two variables - "subject" and "activity", and mean value of each variable is calculated for each combination of "subject" and "activity" (meaning the average of feature measurement when a certain volunteer is performing one kind of activities). The grouped data is assigned to variable groupData, and written in a text file with file path "./project/group_data.txt"
-
-The grouped data set can be read into R using following code:
-
-data <- read.table("./group_data.txt", header = TRUE)
-
-View(data)
