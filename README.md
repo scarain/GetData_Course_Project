@@ -10,7 +10,7 @@
 1. Choose a propriate working directory.
 2. Run the R script run_analysis.R in R.
 3. The grouped data set is saved as "./project/group_data.txt". It can be read into R using following code:<br>
-            data <- read.table("./group_data.txt", header = TRUE)<br>
+            data <- read.table("./project/group_data.txt", header = TRUE)<br>
             View(data)
 
 ## Description of run_analysis.R
