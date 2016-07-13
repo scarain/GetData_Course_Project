@@ -70,7 +70,9 @@
 "Frequency_BodyBody_Gyroscope_Jerk_Magnitude_std" 
 
 ## Dataset Structure
+
 > str(data)
+
 'data.frame':	180 obs. of  68 variables:
  $ subject                                             : int  1 1 1 1 1 1 2 2 2 2 ...
  $ activity                                            : Factor w/ 6 levels "LAYING","SITTING",..: 4 6 5 2 3 1 4 6 5 2 ...
@@ -142,7 +144,9 @@
  $ Frequency_BodyBody_Gyroscope_Jerk_Magnitude_std     : num  -0.382 -0.694 -0.392 -0.987 -0.995 ...
  
  ## Summary of variables
+ 
  > summary(data)
+ 
     subject                   activity  Time_Body_Accelerometer_mean_X
  Min.   : 1.0   LAYING            :30   Min.   :0.2216                
  1st Qu.: 8.0   SITTING           :30   1st Qu.:0.2712                
